@@ -1087,7 +1087,11 @@ footer div{
 		display: none;
 	}
 	.header_right{
+		width: 30%;
+	}
+	.header_right ul li{
 		display: none;
+
 	}
 	.header_right ul{
 		height: 100%;
@@ -1112,6 +1116,7 @@ footer div{
 		right: 50px;
 		top: 23px;
 		width: 20px;
+		cursor:pointer;
 	}
 	.en{
 		position: absolute;
