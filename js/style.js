@@ -1,7 +1,7 @@
 $(function(){
 	/*演讲嘉宾详细信息*/
 	$(".speakers_name button").click(function(){
-		$(this).css({color:'#183249',textDecoration:'underline',border:'none',background:'#fff'});
+		$(this).css({color:'#183249',textDecoration:'underline',border:'none'});
 	})
   	/*演讲嘉宾选项卡*/ 
    jQuery.selectSpeaker = function(speakerTit,speakerBox){
@@ -171,7 +171,7 @@ $(".Agenda_datebox2").click(function(){
         event.stopPropagation();
         var index = this.title;
         var id = '#'+'index_'+index;
-        $("html,body").animate({scrollTop: $(id).offset().top+ -62 +"px"},1000);
+        $("html,body").animate({scrollTop: $(id).offset().top+"px"},1000);
     })
     /*移动版nav*/
     $('.header_right ul+img').click(function(){
@@ -198,17 +198,5 @@ $(".Agenda_datebox2").click(function(){
       btn[num].style.background="#999";
       num++;
     }
-    var t = setInterval(reviewMove,2000);
-
-    /*演讲题目*/
-    $(".arrow_bottom").click(function(){
-        $(".speak_title_text").slideDown()
-        $(".arrow_bottom").hide();
-        $(".arrow_bottom1").fadeIn();
-    })
-    $(".arrow_bottom1").click(function(){
-        $(".speak_title_text").slideUp()
-        $(".arrow_bottom").fadeIn();
-        $(".arrow_bottom1").hide();
-    })
+    var t = setInterval(reviewMove,2000)
 });

@@ -42,7 +42,7 @@
 	padding: 0 40px;
 }
 .header_nav ul li {
-	width: 14.285%;
+	width: 12.5%;
 	float: left;
 	height: 62px;
 	text-align: center;
@@ -111,14 +111,9 @@
 	text-decoration: none;
 	display: inline-block;
 	line-height: 48px;
-	width: 100%;
-	height: 100%;
-	padding-right: 10px;
+	margin-left: 40px;
 }
-.ticket-btn a:hover{
-	text-decoration: none;
-	color: #fff;
-}
+
 /* 大会介绍 */
 .general-introduction{
 	background: #0a679d;
@@ -159,9 +154,6 @@
 
 /*演讲嘉宾 */
 /* 补充 */
-.speak_title_text{
-	display: none;
-}
 .speaker_datebox,.Agenda_datebox{
 	width: 90%;
 	text-align: center;
@@ -364,7 +356,7 @@
 	font-weight: bold !important;
 	background: none !important;
 	border: none !important;
-
+	border-color: rgba(0,3,51,0.1) !important;
 }
 .jiaruhezuo:hover{
 	background: none !important;
@@ -412,18 +404,6 @@
 }
 .modal-body img.arrow_bottom{
 	width: 30px;
-	display: block;
-	margin: 0 auto;
-}
-.modal-body img.arrow_bottom1{
-	width: 30px;
-	display: none;
-	margin: 0 auto;
-	-webkit-transform: rotateZ(180deg);
-    -moz-transform: rotateZ(180deg);
-    -o-transform: rotateZ(180deg);
-    -ms-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
 }
 .become_speaker_f{
 	background:rgba(0,3,51,0.1);padding-bottom:50px;margin-top:20px;
@@ -1222,7 +1202,7 @@ footer div{
 	}
 	.Partner_content ul li{
 		width: 33.3%;
-		padding: 0 10px !important;
+		padding: 0 10px;
 	}
 	.Partner_content ul li a img{
 		width: 80%;
