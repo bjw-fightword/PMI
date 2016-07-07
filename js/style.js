@@ -171,7 +171,7 @@ $(".Agenda_datebox2").click(function(){
         event.stopPropagation();
         var index = this.title;
         var id = '#'+'index_'+index;
-        $("html,body").animate({scrollTop: $(id).offset().top+"px"},1000);
+        $("html,body").animate({scrollTop: $(id).offset().top+ -62 +"px"},1000);
     })
     /*移动版nav*/
     $('.header_right ul+img').click(function(){
