@@ -223,7 +223,7 @@ $(".Agenda_datebox2").click(function(){
         var width = 400;  
         var top=Math.round((window.screen.height-height)/2);  
         var left=Math.round((window.screen.width-width)/2);  
-        window.open("weixin.html",null,
+        window.open("weixin.html?url",null,
       "height=" + height + ", width=" + width + ", top=" + top + ", left= " + left + ", toolbar=no, menubar=no, scrollbars=auto, resizable=no, location=yes, status=no");
      })
 });
