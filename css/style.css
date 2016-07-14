@@ -12,6 +12,12 @@
 .container{
 	padding: 0px 0 30px;
 }
+body{
+	min-width: 1200px;
+}
+.container{
+	min-width: 970px;
+}
 /* 头部 */
 .header{
 	width: 100%;
@@ -36,7 +42,7 @@
 	margin-top: 12px;
 }
 .header_nav{
-	width: 60%;
+	width: 78%;
 	float:left;
 	height: 62px;
 	padding: 0 40px;
@@ -59,10 +65,10 @@
 	color:#ebcf75;
 }
 .header_right{
-	width: 18%;
+	width: 0%;
 	float: left;
 	height: 62px;
-	padding: 0 20px;
+	padding: 0;
 }
 .header_right ul li{
 	width: 20%;
@@ -96,6 +102,18 @@
 	background-size: cover;
 	position: relative;
 }
+@media(max-width: 1600px){
+	.banner{
+		background-size: 100%;
+		height: 450px;
+	}
+}
+@media(max-width: 1200px){
+	.banner{
+		background-size: 100%;
+		
+	}
+}
 .ticket-btn{
 	position: absolute;
 	left: 23%;
@@ -104,6 +122,7 @@
 	height: 48px;
 	background-image: url(../images/ticket-btn.jpg);
 }
+
 .ticket-btn a{
 	color: #fff;
 	font-size: 16px;
@@ -308,7 +327,7 @@
 	text-align: center;
 	padding-top: 60px;
 	padding: 60px 10px 0px;
-	min-height: 325px;
+	min-height:310px;
 	position: relative;
 }
 .speakers_name h3{
@@ -835,10 +854,15 @@
 }
 /* 往期回顾 */
 .previous_review{
-	background-image: url(../images/previous_review_bg.jpg);
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-image: url(../images/previousreviewbg.jpg);
+	background-size: 100%;
+}
+
+
+@media(max-width: 1600px){
+	.previous_review{
+		background-size: 1600px 1000px;
+	}
 }
 .previous_review .top-line{
 	background:#fff;
@@ -902,9 +926,6 @@
 	font-size: 14px;
 	text-decoration: none;
 }
-.previous_review_botm{
-	padding:0 80px;
-}
 .previous_review_boxs{
 	padding-top: 0;
 	margin-top: 30px;
@@ -943,6 +964,17 @@ footer div{
     right: 30px;
     bottom: 160px;
     background-repeat: no-repeat;
+}
+.xinkang{
+	width: 45px;
+    height: 45px;
+    position: fixed;
+    right: 30px;
+    bottom: 205px;
+}
+.xinkang img{
+	display: block;
+	width: 42px;
 }
 #weixin .erweima {
     position: fixed;
@@ -1054,6 +1086,13 @@ footer div{
 
 /* 移动 */
 @media(max-width: 768px){
+	body,.container{
+		min-width: 100%;
+	}
+	.previous_review{
+		background-image: url(../images/previousreviewbgMIN.jpg);
+		background-size: 100% 1500px;
+	}
 	
 	.speaker_datebox ul li a, .Agenda_datebox ul li a{
 		font-size: 12px;
@@ -1162,14 +1201,14 @@ footer div{
 	.ticket-btn a{
 		font-size: 14px;
 		line-height: 25px;
-		margin-left: 25px;
 	}
 	.speaker h1, .Agenda h1, .Registration h1, .Partner h1, .accommodation h1, .previous_review h1,.general-introduction h1{
 		line-height: 60px;
-		font-size: 30px;
+		font-size:25px;
 	}
 	.content p{
 		font-size: 14px;
+
 	}
 	.content ul li{
 		width: 33.3%;
@@ -1186,7 +1225,7 @@ footer div{
 	}
 	.speaker-content-bottom ul li{
 		width: 33.3%;
-		min-height:260px;
+		min-height:305px;
 		padding-top: 30px;
 	}
 	.speaker-content-bottom ul li .speakers_name img{
@@ -1313,5 +1352,139 @@ footer div{
 	.header_right ul{
 		left: 70px;
 	}
+	footer .container{
+		font-size: 12px;
+	}
+}
 
+
+
+
+/* en 样式调整 */
+.header_left_en{
+	width: 10%;
+}
+.header_nav_en ul.en li{
+	width: 12%;
+}
+.header_nav_en ul li.en4{
+	width:15%;
+}
+.header_nav_en ul li.en5{
+	width:22%;
+}
+.header_nav_en{
+	width: 87%;
+    float: left;
+    height: 62px;
+    padding: 0;
+}
+.header_right_en{
+	padding: 0;
+	width: 0%;
+}
+.accommodation_content_botm_en img{
+	width: 150px;
+	margin-top: 10px;
+}
+.accommodation_content_botm_en .accommodation_hotel_name a{
+	font-size: 14px;
+}
+.angeda_2box{
+	width: 100%;
+	height: auto;
+	padding: 50px 0 0 50px;
+}
+.angeda_2box ul li{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+}
+.angeda_2box .angeda_2boxleft{
+	float: left;
+}
+.angeda_2box .angeda_2box_time{
+	width: 30%;
+	text-align: right;
+}
+.angeda_2box .angeda_2box_time li{
+}
+.angeda_2box .angeda_2box_circle{
+	width: 20%;
+	text-align: center;
+}
+.angeda_2box .angeda_2box_content{
+	width: 50%;
+	text-align: left;
+}
+.top_circle{
+	width: 25px;
+	height: 25px;
+	background: #00bcd5;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.middle_line{
+	width: 1px;
+	height: 100%;
+	background:#00bcd5;
+	margin: 0 auto;
+}
+.hollow_circle{
+	width: 35px;
+	height:35px;
+	border: 7px solid #00bcd5;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.text_00bcd5{
+	color: #00bcd5;
+	font-weight: bold;
+}
+.top-line_en{
+	width: 36%;
+}
+.speakers_name_en h3{
+	font-size: 16px;
+}
+.speakers_name_en p{
+	font-size: 12px;
+}
+.min_be_our_speaker{
+	display: block;
+}
+@media(max-width: 1600px){
+	.top-line_en{
+		width: 30%;
+	}
+}
+@media(max-width: 768px){
+	.header_left_en{
+		width: 20%;
+	}
+	.min_be_our_speaker{
+		display: none;
+	}
+	.speaker-content-top_en ul li{
+		display: block;
+	}
+	.angeda_2box{
+		padding: 50px 0 0 0;
+	}
+	.angeda_2box ul li{
+		font-size: 12px;
+	}
+	.Registration_table_en thead tr td{
+		font-size: 12px;
+	}
+	.Registration_table_en tfoot tr td{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.Registration_table_en tfoot tr:nth-of-type(2) td, .Registration_table_en tfoot tr:nth-of-type(3) td{
+		font-size: 12px;
+	}
+	.top-line_en{
+		width: 2%;
+	}
 }

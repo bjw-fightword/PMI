@@ -211,4 +211,8 @@ $(".Agenda_datebox2").click(function(){
         $(".arrow_bottom").fadeIn();
         $(".arrow_bottom1").hide();
     })
+    /*分享到新浪微博*/
+    $(".xinkang").click(function(){
+      window.open('http://v.t.sina.com.cn/share/share.php?title='  + 'PMI(中国)2016项目管理大会（PMI会员/PMP） - 2016年10月22日 星期六 至 23日 星期日 - 北京国际会议中心 （分享自 @友付）&url=' + window.location.href);   
+    })
 });
