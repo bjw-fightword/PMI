@@ -972,7 +972,14 @@ footer div{
     right: 30px;
     bottom: 205px;
 }
-.xinkang img{
+.weixin_fenxiang{
+	width: 45px;
+    height: 45px;
+    position: fixed;
+    right: 30px;
+    bottom: 255px;
+}
+.xinkang img,.weixin_fenxiang img{
 	display: block;
 	width: 42px;
 }
