@@ -333,10 +333,12 @@ body{
 .speakers_name h3{
 	color: #183249;
 	font-weight: bold;
+	font-size: 18px;
 }
 .speakers_name p{
 	color: #183249;
 	font-weight: bold;
+	font-size: 13px;
 }
 .speakers_name a{
 	text-decoration: underline;
@@ -423,7 +425,7 @@ body{
 	width: 200px;
 }
 .becomejiabin{
-	width: 60px;
+	width: 60px !important;
 	margin-top: 50px;
 }
 .modal-body p:nth-of-type(2),.modal-body p:nth-of-type(4),.modal-body p:nth-of-type(3),.modal-body p:nth-of-type(5){
@@ -644,12 +646,11 @@ body{
 /* 注册报名 */
 .Registration_content p{
 	width: 100%;
-	text-align: center;
 	color: #025884;
-	font-size: 18px;
-	line-height: 30px;
+	font-size: 17px;
+	line-height: 25px;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .Registration_table{
 	width: 80%;
@@ -661,35 +662,43 @@ body{
 	border-bottom: 1px solid #dddbdb;
 }
 .Registration_table thead tr td{
-	line-height: 50px;
-	font-size:25px;
+	height: 50px;
+	font-size:18px;
 	color: #fff; 
-	background: #76d0f2;
+	background: #01aded;
 	text-align: center;
 	width: 25%;
 }
+.Registration_table tfoot tr:nth-of-type(1) td,.Registration_table tfoot tr:nth-of-type(3) td,.Registration_table tfoot tr:nth-of-type(5) td{
+	background:#f9f8f8;
+}
+.Registration_table tfoot tr:nth-of-type(2) td,.Registration_table tfoot tr:nth-of-type(4) td{
+	background:#f1f0f0;
+}
+
 .Registration_table thead tr td:nth-of-type(2){
-	background: #50c4f0;
+	
 }
 .Registration_table thead tr td:nth-of-type(3){
-	background: #01aded;
+	
 }
 .Registration_table thead tr td:nth-of-type(4){
-	background: #0797cc;
+	
 }
 .Registration_table tfoot tr td:nth-of-type(2){
-	background: #f6f5f5;
+	font-size: 14px;
 }
 .Registration_table tfoot tr td:nth-of-type(3){
-	background: #eeeeee;
+	
+	font-size: 14px;
 }
 .Registration_table tfoot tr td:nth-of-type(4){
-	background: #e9e7e7;
+	font-size: 14px;
 }
 .Registration_table tfoot tr:nth-of-type(1){
-	line-height: 50px;
 	color: #8f8f91;
 	font-size: 16px;
+	height: 50px;
 }
 .Registration_table tfoot tr:nth-of-type(2) td:nth-of-type(1) p,.Registration_table tfoot tr:nth-of-type(3) td:nth-of-type(1) p{
 	font-size: 16px;
@@ -749,6 +758,39 @@ body{
 	line-height: 25px;
 	font-size: 16px;
 }
+.gift_box{
+	margin: 0 auto;
+	background: #f8f6fb;
+	padding: 10px 0;
+	margin: 10px 0;
+
+}
+.gift_box span{
+	font-size: 18px;
+	color: #b1afb1;
+	margin: 0 60px;
+	display: inline-block;
+}
+.gift_box span.gift_box_span{
+	margin: 0 40px;
+}
+.gift_box span.git_box_bag{
+	margin: 0;
+}
+.yanxiu_content{
+	width: 40%;
+	float: left;
+	text-align: left;
+		padding: 0 20px;
+}
+.team_content{
+	width: 30%;
+	float: left;
+	text-align: left;
+	padding: 0 20px;
+}
+
+
 
 /*合作伙伴 */
 .Partner_content{
@@ -779,7 +821,7 @@ body{
 }
 .Partner_content ul li.partner_Popup .speakers_name img{
 	width: 25px !important;
-	margin-top: 13px;
+	margin-top: -3px;
 }
 .myModal_becomejiabin .partner-modal-dialog h3{
 	color: #333;
@@ -799,9 +841,11 @@ body{
 .myModal_becomejiabin .partner-modal-dialog h4+ul li{
 	float: none;
 	width: 100%;
-	height: 25px;
+	height: auto;
 	line-height: 25px;
 	text-align: left;
+	color: rgb(51,51,51);
+	display: inline-block;
 }
 .myModal_becomejiabin .partner-modal-dialog h4+ul li span{
 	border: 2px solid #00a0e9;
@@ -962,39 +1006,36 @@ footer div{
     background-image: url(../images/new-weixin.png);
     position: fixed;
     right: 30px;
-    bottom: 160px;
+    bottom: 60px;
     background-repeat: no-repeat;
-}
-.xinkang{
-	width: 45px;
-    height: 45px;
-    position: fixed;
-    right: 30px;
-    bottom: 205px;
-}
-.weixin_fenxiang{
-	width: 45px;
-    height: 45px;
-    position: fixed;
-    right: 30px;
-    bottom: 255px;
-}
-.xinkang img,.weixin_fenxiang img{
-	display: block;
-	width: 42px;
 }
 #weixin .erweima {
     position: fixed;
     width: 222px;
     height: 475px;
     right: 80px;
-    bottom: 160px;
+    bottom: 60px;
     background-image: url(../images/erweima.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: none;
 }
+.erweimaen{
+	background: url(../images/erweimaen.png) !important;
+	height: 527px !important;
+}
 /* 补充样式 */
+.giftfather_box{
+	background:#f9f8f8;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.giftfather_box2{
+	padding: 40px;
+	background: #f9f7f8;
+}
 .header_right ul+img{
 	display: none;
 }
@@ -1078,21 +1119,99 @@ footer div{
 
 
 .Registration_content .team_content p{
-	color: #1a1a1a;margin: 20px 0 0px;
+	color: #7a7979;margin: 0;
 }
 .Registration_content .team_content p:nth-of-type(2),.Registration_content .team_content p:nth-of-type(3){
 	margin: 0;
 }
 .Registration_content .yanxiu_content p{
-	color: #333;font-weight:normal;
-	margin: 20px 0 0px;
+	color: #7a7979;font-weight:blod;
+	
 }
 .Registration_content .yanxiu_content p:nth-of-type(2),.Registration_content .yanxiu_content p:nth-of-type(3){
 	margin: 0;
 }
-
+.speakers_name img{
+	width: 116px;
+}
+/* 补充注册报名 */
+.Registration_content .team_content p.Payment_and_invoice{
+	color:  #7a7979;
+	margin-top: 20px;
+	font-weight: normal;
+	line-height: 25px;	
+	font-size: 16px;
+}
 /* 移动 */
 @media(max-width: 768px){
+
+	/* 补充注册报名 */
+	.gift_box span.gift_box_span{
+		margin: 0;
+	}
+	.giftfather_box{
+		width: 100%;
+		padding: 10px 25px;
+	}
+	.gift_box{
+		width: 100%;
+	}
+	.gift_box span{
+		display: block;
+		float: left;
+		margin: 0;
+	}
+	.gift_box span:nth-of-type(1){
+		width: 80%;
+	}
+	.gift_box span:nth-of-type(2){
+		width: 20%;
+	}
+	.team_content,.yanxiu_content{
+		float: none;
+		padding: 0;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.team_content p:nth-of-type(2),.yanxiu_content p:nth-of-type(2),.team_content p:nth-of-type(3),.yanxiu_content p:nth-of-type(3){
+		margin-top: 10px !important;
+	}
+	.team_content p:nth-of-type(2),.team_content p:nth-of-type(3),.yanxiu_content p:nth-of-type(2),.yanxiu_content p:nth-of-type(3){
+		display: inline-block;
+		width: 50%;
+		float: left;
+		font-size: 13px !important;
+	}
+	.team_content p:nth-of-type(1),.yanxiu_content p:nth-of-type(1),.yanxiu_content p:nth-of-type(1) span{
+		font-size: 16px !important;
+		margin-top: 15px;
+	}
+	.Registration_content .team_content p.Payment_and_invoice{
+		width: 95%;
+		float: none;
+		line-height: 25px;
+		margin: 0;
+	}
+	
+
+
+
+
+
+
+	.lijigoupiao_en{
+		width: 90%;
+	}
+	.Registration_table tfoot tr td:nth-of-type(2),.Registration_table tfoot tr td:nth-of-type(3),.Registration_table tfoot tr td:nth-of-type(4){
+		font-size: 12px;
+	}
+	.Registration_content .team_content p.Payment_and_invoice{
+		padding: 0;
+	}
+	/* 地图 */
+	.accommodation_content_md div.maps_box{
+		padding: 0 15px;
+	}
 	body,.container{
 		min-width: 100%;
 	}
@@ -1113,7 +1232,7 @@ footer div{
 	}
 	.ph_ticket{
 		display: block;
-		left: 50%;
+		left: 45%;
 		top: 17px;
 		margin-left: -28px;
 	}
@@ -1159,9 +1278,9 @@ footer div{
 	.header_right ul+img{
 		display: block;
 		position: absolute;
-		right: 50px;
-		top: 23px;
-		width: 20px;
+		right: 55px;
+		top: 20px;
+		width: 30px;
 		cursor:pointer;
 	}
 	.en{
@@ -1254,9 +1373,6 @@ footer div{
 		padding: 0;
 		width: 100%;
 	}
-	.Registration_content p{
-		font-size: 14px;
-	}
 	.Registration_table thead tr td{
 		font-size: 16px;
 	}
@@ -1267,7 +1383,7 @@ footer div{
 		font-size: 12px;
 	}
 	.Registration_table tfoot tr:nth-of-type(2) td:nth-of-type(1) p:nth-of-type(2) a img, .Registration_table tfoot tr:nth-of-type(3) td:nth-of-type(1) p:nth-of-type(2) a img{
-		width: 80%;
+		width: 95%;
 	}
 	.Registration_table{
 		width: 100%;
@@ -1354,7 +1470,7 @@ footer div{
 		width: 50%;
 	}
 	.speaker-content-bottom ul li{
-		min-height: 243px;
+		min-height: 275px;
 	}
 	.header_right ul{
 		left: 70px;
